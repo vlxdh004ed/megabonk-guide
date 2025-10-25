@@ -1,0 +1,34 @@
+.items-content {
+    background-color: var(--content-color);
+    color: var(--color-white);
+    
+    .title-box {
+        padding: 35px 0;
+        text-align: center;
+        border-bottom: var(--border);
+
+        .items-title {
+            padding-bottom: 20px;
+        }
+    }
+
+    .items__card-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px 0;
+        gap: 20px;
+
+
+    
+        .items__card {
+            padding: 10px 35px;
+            color: var(--color-white);
+                    
+
+            background-color: var(--color-grey-footer);
+            border: var(--border);
+            box-shadow: var(--card-shadow);
+            border-radius: 8px;
+        }
+    }
+}

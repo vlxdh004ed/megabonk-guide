@@ -1,0 +1,68 @@
+.guide-discription {
+    color: var(--color-white);
+    background-color: var(--content-color);
+    
+
+    
+
+    .guide-discription__inner {
+        padding: 50px 0;
+
+        .guide-discription__card {
+            padding: 10px 35px;
+            color: var(--color-white);
+            
+
+            background-color: var(--color-grey-footer);
+            border: var(--border);
+            box-shadow: var(--card-shadow);
+            border-radius: 8px;
+
+            .guide-discription__title {
+                border-bottom: var(--border);
+                margin: 10;
+            }
+
+            .guide-discription__discriptions {
+                margin: 25px 0;
+
+                .guide-discription-list {
+                    margin-left: 20px;
+                    list-style: disc;
+                    
+                    li {
+                        margin: 8px 0;
+
+                        .guide-discription-link {
+                            text-decoration: underline;
+                        }
+
+                        img {
+                            
+                            height: 400px;
+                            margin: 0 auto;
+                            padding: 10px 0;
+                        }
+                    }
+                }
+            }
+
+            .falldamage-guide__list {
+                
+                .falldamage-guide__item {
+                    font-size: 20px;
+
+                    .falldamage-guide__item-title {
+                        margin: 30px 0;
+                    }
+                    .falldamage-guide__img {
+                        
+                        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+                        margin-bottom: 20px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.footer {
+    background-color: var(--color-grey-footer);
+    color: var(--color-white);
+
+    &__inner {
+        padding: 0 20px; 
+    }
+
+    &__columns {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px; 
+        flex-wrap: wrap;
+
+        .footer__col--nav {
+            margin-left: 100px;
+
+            .undrln--text {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+                align-self: start;
+            }
+        }
+    }
+
+    &__bottom {
+        background-color: var(--content-color);
+        text-align: center;
+        padding: 10px 0 5px;
+
+        .footer__version-note {
+            color: var(--quote-color); 
+            font-size: 13px;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed var(--color-grey-footer); 
+        }
+
+        .footer__version-note .version-display-placeholder {
+            font-weight: bold;
+            color: var(--highlight-color); 
+            padding: 2px 6px;
+            border-radius: 4px;
+            background-color: rgba(255, 204, 0, 0.1); 
+        }
+
+        .footer__content {
+            text-align: center;
+        }
+    }
+
+    &__copy {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__col {
+        flex: 1 1 200px;
+        min-width: 200px; 
+        
+        h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--color-white);
+        }
+
+        a {
+            &:hover {
+                color: var(--color-white);
+            }
+        }    
+
+        p, a, li {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    &__col--social {
+        flex: 0 1 auto;
+        min-width: 150px; 
+
+        svg {
+            width: 50px
+        }
+        
+    }
+
+}

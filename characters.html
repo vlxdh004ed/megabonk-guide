@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>MegaBonk Guide</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__inner container">
+                <nav class="header__menu hidden-mobile">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="/directory.html" class="header__menu-link">Каталог</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/builds.html" class="header__menu-link">Билды</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/index.html" class="header__menu-link"><strong>На Главную</strong></a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/guides/guides.html" class="header__menu-link">Гайды</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/challenges/challenges.html" class="header__menu-link header__menu-link-left">Челленджи</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+<section class="section">
+    <div class="character-content content">
+        <div class="character-title">
+            <h1>Персонажи</h1>
+        </div>
+
+        <div class="search-box">
+            <div class="search-input-wrapper">
+                <input type="text" id="characterSearch" placeholder="Найти персонажа по имени..." onkeyup="filterCharacters()">
+                <span class="search-icon"></span> 
+            </div>
+        </div>
+        <div class="character-list">
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Fox.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Fox (Лис)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Быстро бегает и чертовски везучий</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/Firestaff.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Огненный посох</h4>
+                                <p class="description-subtitle"> Стреляет огненными шарами, которые взрываются при ударе</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/fox.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Огненный посох</h4>
+                                <p class="description-subtitle"> Стреляет огненными шарами, которые взрываются при ударе</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/SirOofie.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Сэр Уфи <br>(Sir Oofie)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Он медлительный, но его доспехи делают его настоящим танком</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/Sword.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Меч</h4>
+                                <p class="description-subtitle">Рубит несколько врагов подряд</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/2.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Укрепление</h4>
+                                <p class="description-subtitle">+ 1% Брони за каждый уровень</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Calcium_.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Кальций (Calcium)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Нежить-шреддер, выполняющий самые крутые трюки</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/Bone.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Кость</h4>
+                                <p class="description-subtitle">Бросате кости, которые отскакивают от врагов</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/3.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Демон скорости </h4>
+                                <p class="description-subtitle">Постепенно накапливает скорость и теряет половину в случае получении урона, + урон в зависимости от скорости</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Megachad_.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Мегачад (Megachad)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">У него идеальная и мощная челюсть</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/Aura.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Аура </h4>
+                                <p class="description-subtitle">Наносит урон врагам вокруг себя</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/4.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Флекс</h4>
+                                <p class="description-subtitle">Блокирует урон и оглушает врагов. -0.2 перезарядки за каждый уровень</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Ogre_.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Огр (Ogre)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Большой и сильный, с аналитическими способностями мокрого носка</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/Axe.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Топор</h4>
+                                <p class="description-subtitle">Бросает вращаюищиеся топоры, наносящие урон по области</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/5.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Воин</h4>
+                                <p class="description-subtitle">+ 1% Урон за каждый уровень</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/CL4NK_.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Кл4нк (CL4NK)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Я не знаю, как произносится его имя</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/Revolver.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Револьвер</h4>
+                                <p class="description-subtitle">Стреляет несколькими пулями по врагам</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/6.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Критануло</h4>
+                                <p class="description-subtitle">+ 1% Шанс крита за уровень</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Athena.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Афина (Athena)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Капитан Америка, заказанный из Temu (со скидкой)</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/egida.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Эгида </h4>
+                                <p class="description-subtitle">Блокирует атаки и выпускает ударные волны</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/7.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Замок</h4>
+                                <p class="description-subtitle">Больше урона при низком уровне здоровья, + 2 шипы за уровень</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Robinette..png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Робинетта (Robinette)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Крадет у бедных, отдает богатым</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/Bow.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Лук</h4>
+                                <p class="description-subtitle">Стреляет стрелами, которые пронзают врагов</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/8.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Станксы</h4>
+                                <p class="description-subtitle">+ 1% увеличение золота за уровень, + урон в зависимости от твоего золота</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Monke_.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Обезьян (Monke)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Никто не знает откуда у него эти очки. Никто и не спрашивает</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/Bananarang.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Бананаранг</h4>
+                                <p class="description-subtitle">Бросает бананы, которые возвращаюься владельцу</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/9.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Обезьянний хват</h4>
+                                <p class="description-subtitle">Лазай по стенам, + 2 Макс. хп. за уровень</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Tony_McZoom.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Тони МакЗум (Tony McZoom)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Тони не выбирал ховерборд - это ховерборд выбрал его.</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/Bluetooth Knife.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Беспроводной кинжал</h4>
+                                <p class="description-subtitle">Метай умные кинжалы во врагов.</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/10.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Зап</h4>
+                                <p class="description-subtitle">Заряди электрическую атаку, бегая туда-сюда, + 2% радиуса подбора за уровень</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Bush.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Куст (Bush)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Просто обычный куст, ничего особенного.</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/Sniper.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Снайперская Винтовка</h4>
+                                <p class="description-subtitle">Стреляет пронзающими пулями, можно навести вручную</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/11.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">В яблочко</h4>
+                                <p class="description-subtitle">Случайные враги помечаются, + 0.5% критического урона за уровень</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Birdo.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Бирдо (Birdo)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Эти очки для твоей безопасности, не его.</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/Tornado.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Торнадо</h4>
+                                <p class="description-subtitle">Выпускает торнадо, отбрасывая врагов назад</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/12.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Парение</h4>
+                                <p class="description-subtitle">Зажми "Прыжок", чтобы парить в воздухе</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Noelle.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Ноэль (Noelle)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">???</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/Frostwalker.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">???</h4>
+                                <p class="description-subtitle">???</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/10.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">???</h4>
+                                <p class="description-subtitle">???</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Amog.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Амог (Amog)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Никто не знает его настоящее имя. Все просто начали звать его Амог, и он так и не стал их попровлять</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/Poison Flask.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Ядовитая Колба</h4>
+                                <p class="description-subtitle">Бросай колбы с ядом во врагов, нанося им урон по площади и отравляя их.</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/14.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Чума</h4>
+                                <p class="description-subtitle">Отравленные враги взрываются при смерти, заражая кислотой всех вокруг</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Spaceman_Logo.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Космонавт (Spaceman)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Космонавт временно забанен на 7 планетах и во всех сувенирных лавках НАСА.</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/BlackHole.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Черная Дыра</h4>
+                                <p class="description-subtitle">Запускает чёрную дыру, засасывающую врагов.</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/15.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Теория Квантового Опыта</h4>
+                                <p class="description-subtitle">+ 1% Увеличение опыта за каждый уровень</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Bandit.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Бандит (Bandit)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Проворный парень с острым мечом</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/Dexecutioner.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Дексекьюционер</h4>
+                                <p class="description-subtitle">Пронизывающее лезвие. Небольной шанс мгновенно казнить врага</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/16.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Поток</h4>
+                                <p class="description-subtitle">+ 1% Скорости атаки за каждый уровень</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Ninja_.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Ниндзя (Ninja)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Очень быстрый и ловкий. С налогами не заморачивался с 2014 года. Он готов.</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/Katana.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Катана</h4>
+                                <p class="description-subtitle">Острое лезвие, которое находит ближайшего врага.</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/17.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Теневой Шаг</h4>
+                                <p class="description-subtitle">+ 0.5% Уклонения за каждый уровень, уничтожай врага если увернулся от него.</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Vlad_Logo.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Влад (Vlad)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Выглядит злым, но на самом деле отличный парень. Всегда здоровается в магазине.</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/BloodMagic.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Кровавая магия</h4>
+                                <p class="description-subtitle">5% увеличить Макс. здоровье при убийвстве врагов.</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/13.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Вампир</h4>
+                                <p class="description-subtitle">+ 1% похищение жизней за уровень</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Sir_CHadwell.png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Сэр Чадвэлл (Sir Chadwell)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">???</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/13.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">???</h4>
+                                <p class="description-subtitle">???</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/13.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">???</h4>
+                                <p class="description-subtitle">???</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="#" class="character-card-link"> 
+                <div class="character-card">
+                    <div class="card-header">
+                        <img class="character-portrait" src="/images/characters-icons/Dicehead..png" alt="Fox (Лис)">
+                        <div class="character-info">
+                            <h3 class="character-name">Кубоголовый (Dicehead)</h3>
+                        </div>
+                    </div>
+                    <p class="character-description">Его любимое число - 7. Кто расскажет ему плохие новости?</p>
+                    <div class="ability-section">
+                        <div class="ability">
+                            <img src="/images/weapons-icons/Dice.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Кубик</h4>
+                                <p class="description-subtitle">Бросай кости (1-6 урона). Выпавшая 6 навсегда повышает Crit Chance оружия</p>
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <img src="/images/passive-abilities-icons/20.png" alt="Кинжал">
+                            <div class="ability-description">
+                                <h4 class="description-title">Гамба</h4>
+                                <p class="description-subtitle">Улучшается рандомная характеристика за каждый уровень</p>
+                            </div>
+                        </div>
+                        <div class="character-more">
+                            <a class="character-more-link">Билды</a>
+                            <a class="character-more-link">Гайды</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <main class="content">
+    <div class="content__inner container">
+        <div id="characters"  class="characters__content"></div>
+            <div сlass="characters__content-title"><h2>Персонажи</h2></div>
+                <table class="character-table">
+                    <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Weapon</th>
+                                <th>Passive Ability</th>
+                                <th>Objective(s)</th>
+                                <th>Silver Cost</th>
+                            </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                                <td id="fox" class="char-preview">
+                                    <img class="table-img" src="/images/characters-icons/Fox.png" alt="">
+                                    <div  class="char-name"><a href="#">Лис</a></div>
+                                </td>
+                                <td><a href="#"><strong>Огненный посох</strong> <img src="/images/weapons-icons/Firestaff.png" alt=""></a>
+                                <div class="weapon-name"> Стреляет огненными шарами, которые взрываются при ударе</div></td>
+                                <td>
+                                    <strong>Благословление Рандома</strong><br>
+                                    + 1% Удачи за каждый уровень
+                                </td>
+                                <td>Разблокирован по умолчанию</td>
+                                <td>Разблокирован по умолчанию</td>
+                            </tr>
+                            <tr>
+                                <td id="SirOofie" class="char-preview"> 
+                                    <img src="/images/characters-icons/SirOofie.png" alt="" class="table-img">
+                                    <div class="char-name"><a href="#">Сэр Уфи</a></div>
+                                </td>
+                                <td><a href="#"><strong>Меч</strong><img src="/images/weapons-icons/Sword.png" alt=""></a>
+                                <div class="weapon-name">Рубит несколько врагов подряд</div></td>
+                                <td>
+                                    <strong>Укрепление</strong><br>
+                                    + 1% брони за каждый уровень.
+                                </td>
+                                <td>Разблокирован по умолчанию</td>
+                                <td>Разблокирован по умолчанию</td>
+                            </tr>
+                            <tr>
+                                <td class="char-preview"> 
+                                    <img src="/images/characters-icons/Calcium_.png" alt="" class="table-img">
+                                    <div class="char-name"><a href="#">Кальций</a></div>
+                                </td>
+                                <td><a href="#"><strong>Кость</strong><img src="/images/weapons-icons/Bone.png" alt=""></a>
+                                <div class="weapon-name">Бросает кости, которые отскакивают от врагов</div></td>
+                                <td>
+                                    <strong>Демон скорости</strong><br>
+                                    Скорость накапливается постепенно, при получении урона теряется 50% скорости, + урон от скорости
+                                </td>
+                                <td>Убить 100 скелетов
+                                    Купить оружие: <a href="#"><strong>Кость</strong></a>
+                                </td>
+                                <td></td>
+                            </tr>
+                             <tr>
+                                <td class="char-preview"> 
+                                    <img src="/images/characters-icons/Megachad_.png" alt="" class="table-img">
+                                    <div class="char-name"><a href="#">Мегачад</a></div>
+                                </td>
+                                <td><a href="#"><strong>Аура</strong><img src="/images/weapons-icons/Aura.png" alt=""></a>
+                                <div class="weapon-name">Наносит урон врагам вокруг себя</div></td>
+                                <td>
+                                    <strong>Флекс</strong><br>
+                                    Блокирует урон и оглушает врагов. Уменьшает перезарядку на 0.2 за уровень 
+                                </td>
+                                <td>Апнуть том урона до 7-го уровня 
+                                </td>
+                                <td></td>
+                            </tr>
+                             <tr>
+                                <td class="char-preview"> 
+                                    <img src="/images/characters-icons/Ogre_.png" alt="" class="table-img">
+                                    <div class="char-name"><a href="#">Огр</a></div>
+                                </td>
+                                <td><a href="#"><strong>Топор</strong><img src="/images/weapons-icons/Axe.png" alt=""></a>
+                                <div class="weapon-name">Бросает вращаюищиеся топоры, наносящие урон по ауе</div></td>
+                                <td>
+                                    <strong>Воин</strong><br>
+                                    +1% Урона за каждый уровень
+                                </td>
+                                <td>Убить 1500 гоблинов
+                                    Купить оружие: <a href="#">Топор</a>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="char-preview"> 
+                                    <img src="/images/characters-icons/CL4NK_.png" alt="" class="table-img">
+                                    <div class="char-name"><a href="#">кл4нк</a></div>
+                                </td>
+                                <td><a href="#"><strong>Револьвер</strong><img src="/images/weapons-icons/Revolver.png" alt=""></a>
+                                <div class="weapon-name">Стреляет неколькими пулями по врагам</div></td>
+                                <td>
+                                    <strong>Критануло</strong><br>
+                                    +1% Шанс крита за каждый уровень
+                                </td>
+                                <td>Пройти Лес уровень 1 
+                                    Купить оружие: <a href="#">Револьвер</a>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="char-preview"> 
+                                    <img src="/images/characters-icons/Athena.png" alt="" class="table-img">
+                                    <div class="char-name"><a href="#">Афина</a></div>
+                                </td>
+                                <td><a href="#"><strong>Эгида</strong><img src="/images/weapons-icons/.png" alt=""></a>
+                                <div class="weapon-name">Блокирует атаки и выпускает ударные волны</div></td>
+                                <td>
+                                    <strong>Замок</strong><br>
+                                    Больше урона при низком уровне здоровья, +2 Шипы за каждый уровень
+                                </td>
+                                <td>Апнуть 9 уровень Тома Шипов 
+                                    Купить оружие: <a href="#">Эгида</a>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="char-preview"> 
+                                    <img src="/images/characters-icons/Robinette..png" alt="" class="table-img">
+                                    <div class="char-name"><a href="#">Робинетта</a></div>
+                                </td>
+                                <td><a href="#"><strong>Лук</strong><img src="/images/weapons-icons/Bow.png" alt=""></a>
+                                <div class="weapon-name">Стреляет стрелами, которые пронзают врагов</div></td>
+                                <td>
+                                    <strong>Станксы</strong><br>
+                                    +1% увеличение золота за каждый уровень, доп урон зависящий от количества золота у тебя в инвентаре
+                                </td>
+                                <td>Пройти лес уровень 2<br>
+                                    Купить оружие: <a href="#">Лук</a>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="char-preview"> 
+                                    <img src="/images/characters-icons/Monke_.png" alt="" class="table-img">
+                                    <div class="char-name"><a href="#">Обезьян</a></div>
+                                </td>
+                                <td><a href="#"><strong>Бананаранг</strong><img src="/images/weapons-icons/Bananarang.png" alt=""></a>
+                                <div class="weapon-name">Бросает бананы, которые возвращаюься к владельку</div></td>
+                                <td>
+                                    <strong>Обезьяний хват</strong><br>
+                                    Лазай по стенам, +2% макс. хп.
+                                </td>
+                                <td>Пройти лес уровень 2<br>
+                                    Купить оружие: <a href="#">Лук</a>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </main> -->
+
+        <footer class="footer">
+            <div class="footer__inner container">
+                <div class="footer__columns">
+            
+            <div class="footer__col footer__col--about">
+                <h4>О сайте</h4>
+                <p>MegaBonk Guide - это фан-сайт, посвященный сбору актуальной информации, билдов и гайдов по игре MegaBonk.</p>    
+            </div>
+            <div class="footer__col footer__col--nav">
+                <h4>Разделы</h4>
+                <ul>
+                    <li><a class="undrln--text" href="/directory.html">Каталог</a></li>
+                    <li><a class="undrln--text" href="/builds.html">Билды</a></li>
+                    <li><a class="undrln--text" href="/guides.html">Гайды</a></li>
+                    <li><a class="undrln--text" href="/challenges.html">Челленджи</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col footer__col--social">
+                <h4>Связь</h4>
+                <p>Discord: <a href="https://discord.com/users/906121726277083136" target="blank">Discord</a></p>
+                <p>Telegram: <a href="https://t.me/duis97deo">Telegram</a></p>
+                <div class="social-links">
+                    <a href="https://discord.com/users/906121726277083136" target="blank">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.59 5.88997C17.36 5.31997 16.05 4.89997 14.67 4.65997C14.5 4.95997 14.3 5.36997 14.17 5.69997C12.71 5.47997 11.26 5.47997 9.83001 5.69997C9.69001 5.36997 9.49001 4.95997 9.32001 4.65997C7.94001 4.89997 6.63001 5.31997 5.40001 5.88997C2.92001 9.62997 2.25001 13.28 2.58001 16.87C4.23001 18.1 5.82001 18.84 7.39001 19.33C7.78001 18.8 8.12001 18.23 8.42001 17.64C7.85001 17.43 7.31001 17.16 6.80001 16.85C6.94001 16.75 7.07001 16.64 7.20001 16.54C10.33 18 13.72 18 16.81 16.54C16.94 16.65 17.07 16.75 17.21 16.85C16.7 17.16 16.15 17.42 15.59 17.64C15.89 18.23 16.23 18.8 16.62 19.33C18.19 18.84 19.79 18.1 21.43 16.87C21.82 12.7 20.76 9.08997 18.61 5.88997H18.59ZM8.84001 14.67C7.90001 14.67 7.13001 13.8 7.13001 12.73C7.13001 11.66 7.88001 10.79 8.84001 10.79C9.80001 10.79 10.56 11.66 10.55 12.73C10.55 13.79 9.80001 14.67 8.84001 14.67ZM15.15 14.67C14.21 14.67 13.44 13.8 13.44 12.73C13.44 11.66 14.19 10.79 15.15 10.79C16.11 10.79 16.87 11.66 16.86 12.73C16.86 13.79 16.11 14.67 15.15 14.67Z" fill="#000000"></path> </g></svg>
+                    </a>
+                    <a href="https://t.me/duis97deo" target="blank">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 4C10.4178 4 8.87103 4.46919 7.55544 5.34824C6.23985 6.22729 5.21447 7.47672 4.60897 8.93853C4.00347 10.4003 3.84504 12.0089 4.15372 13.5607C4.4624 15.1126 5.22433 16.538 6.34315 17.6569C7.46197 18.7757 8.88743 19.5376 10.4393 19.8463C11.9911 20.155 13.5997 19.9965 15.0615 19.391C16.5233 18.7855 17.7727 17.7602 18.6518 16.4446C19.5308 15.129 20 13.5823 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4ZM15.93 9.48L14.62 15.67C14.52 16.11 14.26 16.21 13.89 16.01L11.89 14.53L10.89 15.46C10.8429 15.5215 10.7824 15.5715 10.7131 15.6062C10.6438 15.6408 10.5675 15.6592 10.49 15.66L10.63 13.66L14.33 10.31C14.5 10.17 14.33 10.09 14.09 10.23L9.55 13.08L7.55 12.46C7.12 12.33 7.11 12.03 7.64 11.83L15.35 8.83C15.73 8.72 16.05 8.94 15.93 9.48Z" fill="#000000"></path> </g></svg>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; 2025 MegaBonk Guide | Все права на контент принадлежат их авторам.</p>
+                
+                <p class="footer__version-note">
+                    Актуально для версии игры: 
+                    <span class="version-display-placeholder"></span>
+                </p>
+            </div>
+            
+        </p>
+
+        </footer>
+
+        <script src="/scripts/header.js"></script>
+        <script src="/scripts/search.js"></script>
+        <script src="/scripts/guides-card.js"></script>
+        <script src="/scripts/global-version.js"></script>
+    </div>
+</body>
+</html> 

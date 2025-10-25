@@ -1,0 +1,26 @@
+@import 
+    'normalize', 
+    'fonts', 
+    'mixins', 
+    'media',
+    'variables', 
+    'utils', 
+    'globals';
+
+@import 
+    'blocks/header',
+    'blocks/content',
+    'blocks/character-cards',
+    'blocks/logo-bg',
+    'blocks/main-title',
+    'blocks/footer',
+    'blocks/section',
+    'blocks/character-search',
+    'blocks/directory',
+    'blocks/guides',
+    'blocks/guide-discription',
+    'blocks/challenges',
+    'blocks/characters-guide',
+    'blocks/items',
+    'blocks/builds',
+    'blocks/title-box'

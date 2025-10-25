@@ -1,0 +1,17 @@
+.section {
+    &__inner {
+        .main-title {
+            color: var(--color-white);
+            background-color: var(--color-grey-footer);
+            border: var(--border);
+            box-shadow: var(--card-shadow);
+            border-radius: 8px;
+            padding: 45px 40px;
+            margin: 20px;
+            text-align: center;
+            .title-text {
+                @include fluid-text(28, 18)
+            }
+        }
+    }
+}

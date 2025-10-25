@@ -1,0 +1,51 @@
+.characters__guide-discription {
+    
+    color: var(--color-white);
+    background-color: var(--content-color);
+
+    .characters__guide-discription__inner {
+        display: grid;
+        padding: 50px 0;
+        gap: 30px;
+
+        .characters-discription__card {
+            padding: 10px 35px;
+            color: var(--color-white);
+                
+
+            background-color: var(--color-grey-footer);
+            border: var(--border);
+            box-shadow: var(--card-shadow);
+            border-radius: 8px;
+
+            .characters-discription__title {
+                border-bottom: var(--border);
+                margin: 10;
+            }
+
+            .characters-discription__discriptions {
+                margin: 25px 0;
+
+                .characters-discription__subtitle {
+                    margin-bottom: 20px; 
+                }
+
+                .characters-discription__text {
+                    margin: 20px 0;
+                }
+
+                .characters-discription__subtitle-img {
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin-bottom: 20px;
+                
+                    .tonyspeed-4 {
+                        padding-left: 10px;
+                    }  
+                    
+                    
+                }
+            }
+        }
+    }
+}

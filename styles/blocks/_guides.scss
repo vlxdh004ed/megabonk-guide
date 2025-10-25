@@ -1,0 +1,39 @@
+.guides__content {
+    color: var(--color-white);
+    background-color: var(--content-color);
+    .title-box {
+        padding: 35px 0;
+        text-align: center;
+        border-bottom: var(--border);
+
+        .guides-intro {
+            margin-top: 10px;
+        }
+    }
+}
+.guides__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 0;
+    gap: 20px;
+    
+    .guides__card {
+        padding: 10px 50px;
+        color: var(--color-white);
+        align-items: center;
+        
+
+        background-color: var(--color-grey-footer);
+        border: var(--border);
+        box-shadow: var(--card-shadow);
+        border-radius: 8px;
+
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+            transform: scale(1.01);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+            border-color: var(--light-card-border);
+        }
+    }
+}
