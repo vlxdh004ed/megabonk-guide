@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg"/>
+    <link rel="shortcut icon" href="favicon/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"/>
+    <meta name="apple-mobile-web-app-title" content="MyWebSite"/>
+    <link rel="manifest" href="favicon/site.webmanifest"/>
+    <title>MegaBonk Guide | Builds</title>
+    <base href="/megabonk-guide"> 
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav">
+                <div class="header__nav-logo">
+                    <a class="header__nav-logo-item" href="index.html">MegaBonk Guide</a>
+                </div>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="guides.html" class="header__nav-link">Guides</a></li>
+                    <li class="header__nav-item"><a href="builds.html" class="header__nav-link">Builds</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section__main container">
+                <h1 class="section__title">Каталог сборок</h1>
+                <div class="search-box">
+                    <div class="search-input-wrapper">
+                        <input type="text" class="search-box__input" id="searchInput" placeholder="Поиск по каталогу...">
+
+                        <div class="custom-select-wrapper">
+                            <select class="custom-select-wrapper-list" id="charSelect">
+                                <option value="">Все Персонажи</option>
+                                <option value="fox">Лис</option>
+                                <option value="oofie">Сэр Уфи</option>
+                                <option value="calcium">Кальций</option>
+                                <option value="Megachad">Мегачад</option>
+                                <option value="Ogre">Огр</option>
+                                <option value="CL4NK">Кл4нк</option>
+                                <option value="Athena">Афина</option>
+                                <option value="Robinette">Робинетта</option>
+                                <option value="Monke">Обезьян</option>
+                                <option value="Tony McZoom">Тони МакЗум</option>
+                                <option value="Bush">Куст</option>
+                                <option value="Birdo">Бирдо</option>
+                                <option value="Noelle">Ноэль</option>
+                                <option value="Amog">Амог</option>
+                                <option value="Spaceman">Космонавт</option>
+                                <option value="Bandit">Бандит</option>
+                                <option value="Ninja">Ниндзя</option>
+                                <option value="Vlad">Влад</option>
+                                <option value="Sir Chadwell">Сэр Чадвэлл</option>
+                                <option value="Dicehead">Кубоголовый</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="builds__inner builds-grid" id="buildsGrid">
+                            <div class="builds__card build-card search-card-item" data-build-id="Noelle-HollyBook" data-char="Noelle" >
+                                <div class="build-card__header">
+                                    <div class="build-card__char-icon" style="background-image: url('/images/builds-recourses/character-icons/Noelle.png');"></div>
+                                    <h2 class="build-card__title search-text-target">Ноэль через холи бук</h2> 
+                                    <span class="build-card__tier build-card__tier--S"></span>
+                                </div>
+                            </div>
+                            <div class="builds__card build-card search-card-item" data-build-id="Robinette-gold" data-char="Robinette" >
+                                <div class="build-card__header">
+                                    <div class="build-card__char-icon" style="background-image: url('images/builds-recourses/character-icons/Robinette..png');"></div>
+                                    <h2 class="build-card__title search-text-target">Лучница через голду</h2> 
+                                </div>
+                            </div>
+                            <div class="builds__card build-card search-card-item" data-build-id="Noelle-base" data-char="Noelle" >
+                                <div class="build-card__header">
+                                    <div class="build-card__char-icon" style="background-image: url('/images/builds-recourses/character-icons/Noelle.png');"></div>
+                                    <h2 class="build-card__title search-text-target">Ноэль база</h2> 
+                                </div>
+                            </div>
+                            <div class="builds__card build-card search-card-item" data-build-id="Megachad-thorns" data-char="Megachad" >
+                                <div class="build-card__header">
+                                    <div class="build-card__char-icon" style="background-image: url('/images/builds-recourses/character-icons/Megachad_.png');"></div>
+                                    <h2 class="build-card__title search-text-target">Чад через шипы</h2> 
+                                </div>
+                            </div>
+                            <div class="builds__card build-card search-card-item" data-build-id="Vlad-bloodmarks" data-char="Vlad" >
+                                <div class="build-card__header">
+                                    <div class="build-card__char-icon" style="background-image: url('/images/builds-recourses/character-icons/Vlad_Logo.png');"></div>
+                                    <h2 class="build-card__title search-text-target">Влад через блудмарки</h2> 
+                                </div>
+                            </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="buildModal">
+            <div class="build-details">
+                <button class="build-details__close" id="closeModalBtn">&times;</button>
+                
+                <h2 class="build-details__title" id="modal-build-title"></h2>
+                <p class="build-details__char-name" id="modal-char-name"></p>
+                
+                <div class="build-details__section items-section">
+                    
+                    <div id="modalItemsGrid"></div> 
+                </div>
+                
+                
+                <div class="build-details__section">
+                    <h3>Паттерн Игры</h3>
+                    <ul class="build-details__list" id="modalLevelingList"></ul>
+                </div>
+
+                <div class="build-details__section">
+                    <h3>Паттерн Прокачки</h3>
+                    <ul class="build-details__list" id="modalUpList"></ul>
+                </div>
+
+                <div class="build-details__section">
+                    <h3>Советы</h3>
+                    <p id="modalTipsContent"></p>
+                </div>
+            </div>
+        </div>
+
+    <footer class="footer">
+        <div class="footer__main container">
+            <div class="footer__content">
+                <div class="footer__nav">
+                    <h3 class="footer__nav-title">Navigation</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="guides.html" class="footer__nav-link">Guides</a></li>
+                        <li class="footer__nav-item"><a href="builds.html" class="footer__nav-link">Builds</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__nav-title">Contact</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="https://discord.com/users/906121726277083136" target="blank">Discord</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="https://t.me/duis97deo" target="blank">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">&copy; 2025 MegaBonk Guide. All rights reserved.</p>
+            <p class="footer__version-note">
+                Актуально для версии игры: 
+                <span class="version-display-placeholder"></span>
+            </p>
+        </div>
+    </footer>
+    <script src="scripts/activePage.js"></script>
+    <script src="scripts/global-version.js"></script>
+    <script src="scripts/builds-card.js"></script>
+</body>
+</html>

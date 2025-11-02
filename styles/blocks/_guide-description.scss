@@ -1,0 +1,109 @@
+
+
+.guide__description {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &-title {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    &-subtitle {
+        border-top: var(--border);
+        border-bottom: var(--border);
+        color: var(--color-subtitle-text);
+        font-style: italic;
+        margin: 0 auto;
+        width: 60%;
+        padding: 20px 0;
+
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+    }
+
+    &-text {
+        text-align: left;
+        font-size: 18px;
+        line-height: 1.6;
+
+        @media (max-width: 480px) {
+            font-size: 16px;
+        }
+
+        &-link {
+            text-decoration: underline;
+        }
+    }
+
+    &-pre {
+        background-color: var(--content-color-dark);
+        padding: 10px;
+        margin: 0;
+        text-align: left;
+        text-wrap: auto;
+    }
+
+    &-img {
+        border: var(--border);
+        margin: 0 auto;
+    }
+    
+    .img_challenge-list {
+        display: flex;
+        gap: 20px;
+        width: 65%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+
+        .img_challenge-list-img:nth-child(1) {
+            width: 50%;
+        }
+        
+    }
+
+    .lightbox {
+        display: inline-block;
+        align-self: center;
+        width: 50%;
+
+        img {
+            display: block; 
+            height: auto;
+        }
+    }        
+
+}
+
+
+
+.guide-navigation {
+    margin-bottom: 10px;
+    .catalog-button {
+        background-color: var(--content-color-dark);
+        border: var(--border);
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 20px;
+        cursor: pointer;
+
+        &:hover {
+            border-color: var(--color-card-border);
+        }
+
+        .arrow-icon {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-top: 2px solid var(--color-white);
+            border-left: 2px solid var(--color-white);
+            transform: rotate(-45deg);
+            margin-right: 8px;
+        }
+    }    
+}
+
+

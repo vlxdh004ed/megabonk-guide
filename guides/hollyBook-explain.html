@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg"/>
+    <link rel="shortcut icon" href="favicon/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"/>
+    <meta name="apple-mobile-web-app-title" content="MyWebSite"/>
+    <link rel="manifest" href="favicon/site.webmanifest"/>
+    <title>Guide | Holly Book</title>
+    <base href="/megabonk-guide"> 
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav">
+                <div class="header__nav-logo">
+                    <a class="header__nav-logo-item" href="index.html">MegaBonk Guide</a>
+                </div>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="guides.html" class="header__nav-link">Guides</a></li>
+                    <li class="header__nav-item"><a href="builds.html" class="header__nav-link">Builds</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section__main container">
+                <div class="guide__description">
+                    <div class="guide-navigation">
+                        <a href="guides.html" class="catalog-button">
+                            <span class="arrow-icon"></span> К каталогу гайдов
+                        </a>
+                    </div>
+                    <h1 class="guide__description-title">Как работает Святая Книга</h1>
+                    <p class="guide__description-text">Описание в игре говорит, что книга дает 100 макс. хп, +50 регенерации здоровья и любая регенерация наносит урон врагам, её урон считается как:</p>
+                    <pre class="guide__description-pre">damage = (playerMaxHP * 0.5) * healsThisTick</pre>
+                    <p class="guide__description-text">То есть половина от макс. здоровья умножается на тик хила, кд удара книги 1.5 с. За время кд весь хил накапливается и расчитывается в урон, простыми словами, чем больше хп вы отхилите за время кд. книги, тем больше будет урона от неё</p>
+                    <p class="guide__description-text">Больше всего хила выходит с лайфстила, лучше в забегах с книгой, со шрайнов приоритетно выбирать его, на сайте есть гайд <a class="guide__description-text-link" href="guides/lifesteal-explain.html">по механике лайф стила</a> </p>
+                    <p class="guide__description-text"></p>
+                    <p class="guide__description-text"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__main container">
+            <div class="footer__content">
+                <div class="footer__nav">
+                    <h3 class="footer__nav-title">Navigation</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="guides.html" class="footer__nav-link">Guides</a></li>
+                        <li class="footer__nav-item"><a href="builds.html" class="footer__nav-link">Builds</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__nav-title">Contact</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="https://discord.com/users/906121726277083136" target="blank">Discord</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href="https://t.me/duis97deo" target="blank">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">&copy; 2025 MegaBonk Guide. All rights reserved.</p>
+            <p class="footer__version-note">
+                Актуально для версии игры: 
+                <span class="version-display-placeholder"></span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="scripts/activePage.js"></script>
+    <script src="/scripts/global-version.js"></script>
+</body>
+</html>

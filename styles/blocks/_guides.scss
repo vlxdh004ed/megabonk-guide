@@ -1,0 +1,42 @@
+.guides__card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .guides__card {
+        min-height: 82px;
+        display: flex;
+        width: 100%;
+        background-color: var(--content-color-dark);
+        border: var(--border);
+        align-items: center;
+        justify-content: center;
+
+        padding: 10px;
+        color: var(--color-white);
+
+        &:hover {
+            border-color: var(--color-card-border);
+        }
+
+        &-title {
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 20px;
+                font-weight: 700;
+
+                @media (max-width: 480px) {
+                    font-size: 18px;
+                }
+            }
+           
+        }
+    }
+}
