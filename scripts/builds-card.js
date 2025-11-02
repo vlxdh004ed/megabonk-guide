@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('searchInput');
     const charSelect = document.getElementById('charSelect');
 
-    const BASE_ICONS_PATH = '/images/builds-recourses/';
+    const BASE_ICONS_PATH = 'images/builds-recourses/';
     
     const getIconFolderPath = (type) => {
         switch (type) {
@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
             character: 'Робинетта (Robinette)',
             weapons: [
                 { icon: 'Bow.png', name: 'Лук', description: 'Основное оружие лучницы' },
-                { icon: 'aura.png', name: 'Аура', description: 'АоЕ урон, дает возможнось не задыхаться в рои' },
-                { icon: 'firewalker.png', name: 'Огненный странник', description: 'Большой урон по АоЕ, брать обязательно' },
+                { icon: 'Aura.png', name: 'Аура', description: 'АоЕ урон, дает возможнось не задыхаться в рои' },
+                { icon: 'Firewalker.png', name: 'Огненный странник', description: 'Большой урон по АоЕ, брать обязательно' },
                 { icon: 'Dexecutioner.png', name: 'Дексекьюционер', description: 'Аое урон, есть шанс моментально убить врага' },
             ],
             tomes: [
@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { icon: 'ChaosTome.png', name: 'Том Хаоса', description: 'Качает случайную характеристику' },
             ],
             gear: [
-                { icon: 'kevin.png', name: 'Кевин', description: '25% с каждой тычки наносишь себе урон' },
-                { icon: 'itemGoldenShield.png', name: 'Золотой щит', description: '+ золото, когда получаешь урон' },
+                { icon: 'Kevin.png', name: 'Кевин', description: '25% с каждой тычки наносишь себе урон' },
+                { icon: 'ItemGoldenShield.png', name: 'Золотой щит', description: '+ золото, когда получаешь урон' },
             ],
             // ------------------------------------
             leveling: [
@@ -65,9 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'Noelle-base': {
             character: 'Ноэль (Noelle)',
             weapons: [
-                { icon: 'frostwalker.png', name: 'Ледяной Странник', description: 'Основное оружие Ноэль' },
-                { icon: 'firewalker.png', name: 'Огненный странник', description: 'Большой урон по области, брать обязательно' },
-                { icon: 'katana.png', name: 'Катана', description: 'Большой дпс на старте дает выживаемость' },
+                { icon: 'Frostwalker.png', name: 'Ледяной Странник', description: 'Основное оружие Ноэль' },
+                { icon: 'Firewalker.png', name: 'Огненный странник', description: 'Большой урон по области, брать обязательно' },
+                { icon: 'Katana.png', name: 'Катана', description: 'Большой дпс на старте дает выживаемость' },
                 { icon: 'Dexecutioner.png', name: 'Дексекьюционер', description: 'Урон по небольшой области, есть шанс моментально убить врага' },
             ],
             tomes: [
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             gear: [
                 { icon: 'ItemIceCrystal.png', name: 'Ледяной Кристал', description: 'Хорошо бустит урон на старте, и в миде' },
-                { icon: 'itemicecube.png', name: 'Ледяной Куб', description: 'Наверное мейн айтем для билда' },
+                { icon: 'Itemicecube.png', name: 'Ледяной Куб', description: 'Наверное мейн айтем для билда' },
             ],
             // ------------------------------------
             leveling: [
@@ -96,21 +96,21 @@ document.addEventListener('DOMContentLoaded', () => {
         'Megachad-thorns': {
             character: 'Мегачад (Megachad)',
             weapons: [
-                { icon: 'aura.png', name: 'Аура', description: 'Основное оружие Чада' },
+                { icon: 'Aura.png', name: 'Аура', description: 'Основное оружие Чада' },
                 { icon: 'Egida.png', name: 'Эгида', description: 'Чтобы жить' },
-                { icon: 'bluetooth knife.png', name: 'Беспроводной кинжал', description: 'Брать во второй слот, изи прохождение первой локи' },
-                { icon: 'katana.png', name: 'Катана', description: 'Большой дпс со старта' },
+                { icon: 'Bluetooth knife.png', name: 'Беспроводной кинжал', description: 'Брать во второй слот, изи прохождение первой локи' },
+                { icon: 'Katana.png', name: 'Катана', description: 'Большой дпс со старта' },
             ],
             tomes: [
-                { icon: 'armorTome.png', name: 'Том Армора', description: 'Больше армора, обязательно для билда' },
+                { icon: 'ArmorTome.png', name: 'Том Армора', description: 'Больше армора, обязательно для билда' },
                 { icon: 'ThornsTome.png', name: 'Том Шипов', description: 'Так же основа билда' },
                 { icon: 'XpTome.png', name: 'Том Опыта', description: '+ Опыт' },
-                { icon: 'cursedTome.png', name: 'Проклятый Том', description: '+ Кол-во мобов - больше опыта' },
+                { icon: 'CursedTome.png', name: 'Проклятый Том', description: '+ Кол-во мобов - больше опыта' },
             ],
             gear: [
-                { icon: 'itemcactus.png', name: 'Кактус', description: 'Выстреливает шипами при получении урона, урон так же зависит от шипов' },
-                { icon: 'kevin.png', name: 'Кевин', description: 'Синергия с кактусом, основа билда' },
-                { icon: 'itemSpikyShieldf.png', name: 'Щит с Шипами', description: '+2 шипы за каждый % армора, синергия с томом на армор' },
+                { icon: 'Itemcactus.png', name: 'Кактус', description: 'Выстреливает шипами при получении урона, урон так же зависит от шипов' },
+                { icon: 'Tevin.png', name: 'Кевин', description: 'Синергия с кактусом, основа билда' },
+                { icon: 'ItemSpikyShieldf.png', name: 'Щит с Шипами', description: '+2 шипы за каждый % армора, синергия с томом на армор' },
             ],
             // ------------------------------------
             leveling: [
@@ -130,19 +130,19 @@ document.addEventListener('DOMContentLoaded', () => {
         'Noelle-HollyBook': {
             character: 'Ноэль (Noelle)',
             weapons: [
-                { icon: 'frostwalker.png', name: 'Ледяной Странник', description: 'Основное оружие Ноэль' },
-                { icon: 'firewalker.png', name: 'Огненный странник', description: 'Большой урон по области, брать обязательно' },
+                { icon: 'Frostwalker.png', name: 'Ледяной Странник', description: 'Основное оружие Ноэль' },
+                { icon: 'Firewalker.png', name: 'Огненный странник', description: 'Большой урон по области, брать обязательно' },
                 { icon: 'katana.png', name: 'Катана', description: 'Большой дпс на старте дает выживаемость' },
                 { icon: 'Dexecutioner.png', name: 'Дексекьюционер', description: 'Урон по небольшой области, есть шанс моментально убить врага' },
             ],
             tomes: [
                 { icon: 'CursedTome.png', name: 'Проклятый Том', description: '+ Сложность, + кол-во мобов' },
                 { icon: 'XpTome.png', name: 'Том Опыта', description: '+ Увеличение Опыта, брать обязательно' },
-                { icon: 'bloodtome.png', name: 'Кровавый Том', description: 'Лайфстил для бука' },
+                { icon: 'Bloodtome.png', name: 'Кровавый Том', description: 'Лайфстил для бука' },
                 { icon: 'ChaosTome.png', name: 'Том Хаоса', description: 'Качает случайную характеристику' },
             ],
             gear: [
-                { icon: 'itemholybook.png', name: 'Святая Книга', description: '+ 100 макс. хп, +50 регена, реген наносит урон  ' },
+                { icon: 'Itemholybook.png', name: 'Святая Книга', description: '+ 100 макс. хп, +50 регена, реген наносит урон  ' },
             ],
             // ------------------------------------
             leveling: [
@@ -160,14 +160,14 @@ document.addEventListener('DOMContentLoaded', () => {
             character: 'Влад (Vlad)',
             weapons: [
                 { icon: 'BloodMagic.png', name: 'Кровавая Магия', description: 'Основное оружие Влада' },
-                { icon: 'aura.png', name: 'Аура', description: 'АоЕ урон, дает возможнось не задыхаться во время волн' },
-                { icon: 'firewalker.png', name: 'Огненный странник', description: 'Большой урон по АоЕ, брать обязательно' },
+                { icon: 'Aura.png', name: 'Аура', description: 'АоЕ урон, дает возможнось не задыхаться во время волн' },
+                { icon: 'Firewalker.png', name: 'Огненный странник', description: 'Большой урон по АоЕ, брать обязательно' },
                 { icon: 'Dexecutioner.png', name: 'Дексекьюционер', description: 'Аое урон, есть шанс моментально убить врага' },
             ],
             tomes: [
                 { icon: 'XpTome.png', name: 'Том Опыта', description: '+ Увеличение Опыта, брать обязательно' },
                 { icon: 'CursedTome.png', name: 'Проклятый Том', description: '+ Сложность, + кол-во мобов' },
-                { icon: 'bloodtome.png', name: 'Кровавый том', description: 'Лайфстил' },
+                { icon: 'Bloodtome.png', name: 'Кровавый том', description: 'Лайфстил' },
                 { icon: 'ChaosTome.png', name: 'Том Хаоса', description: 'Качает случайную характеристику' },
             ],
             gear: [
