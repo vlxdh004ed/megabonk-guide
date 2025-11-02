@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('searchInput');
     const charSelect = document.getElementById('charSelect');
 
-    const BASE_ICONS_PATH = 'images/builds-recourses/';
+    const BASE_ICONS_PATH = '/images/builds-recourses/';
     
     const getIconFolderPath = (type) => {
         switch (type) {
