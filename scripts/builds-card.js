@@ -30,6 +30,34 @@ document.addEventListener('DOMContentLoaded', () => {
     // ----------------------
 
     const BUILDS_DATA = {
+        'Noelle-HollyBook': {
+            character: 'Ноэль (Noelle)',
+            weapons: [
+                { icon: 'Frostwalker.png', name: 'Ледяной Странник', description: 'Основное оружие Ноэль' },
+                { icon: 'Firewalker.png', name: 'Огненный странник', description: 'Большой урон по области, брать обязательно' },
+                { icon: 'Katana.png', name: 'Катана', description: 'Большой дпс на старте дает выживаемость' },
+                { icon: 'Dexecutioner.png', name: 'Дексекьюционер', description: 'Урон по небольшой области, есть шанс моментально убить врага' },
+            ],
+            tomes: [
+                { icon: 'CursedTome.png', name: 'Проклятый Том', description: '+ Сложность, + кол-во мобов' },
+                { icon: 'XpTome.png', name: 'Том Опыта', description: '+ Увеличение Опыта, брать обязательно' },
+                { icon: 'BloodTome.png', name: 'Кровавый Том', description: 'Лайфстил для бука' },
+                { icon: 'ChaosTome.png', name: 'Том Хаоса', description: 'Качает случайную характеристику' },
+            ],
+            gear: [
+                { icon: 'ItemHolyBook.png', name: 'Святая Книга', description: '+ 100 макс. хп, +50 регена, реген наносит урон  ' },
+            ],
+            // ------------------------------------
+            leveling: [
+                'Для старта ищем кредитку и ключи, раздуваем удачу',
+                'До конца второго уровня желательно найти ключевые айтемы билда',
+            ],
+            Up: [
+                'На первых уровнях качаем томы',
+                'Параллельно из шрайнов стараемся забирать любой хил',
+            ],
+            tips: 'Основа билда заключается в том чтобы в лейте быть с раздутым хилом и минимум одной книгой, радиус книги увеличивается за счет пассивки ноэль которая дает +1% размера за каждый уровень, по ходу игры можно найти вилки которые под кевином дают много урона и выживаемости, так же под кевина можно взять голд шилд. На сайте есть гайд <a href="guides/hollyBook-explain.html" class="tip-link">как работает Святая Книга</a>',
+        },
         'Robinette-gold': {
             character: 'Робинетта (Robinette)',
             weapons: [
@@ -61,7 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             tips: 'Кевин + шилд + вкачаный том золота дает миллион золота, пасивка лучницы дает урон за голду',
         },
-
         'Noelle-base': {
             character: 'Ноэль (Noelle)',
             weapons: [
@@ -78,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             gear: [
                 { icon: 'ItemIceCrystal.png', name: 'Ледяной Кристал', description: 'Хорошо бустит урон на старте, и в миде' },
-                { icon: 'Itemicecube.png', name: 'Ледяной Куб', description: 'Наверное мейн айтем для билда' },
+                { icon: 'ItemiIceCube.png', name: 'Ледяной Куб', description: 'Наверное мейн айтем для билда' },
             ],
             // ------------------------------------
             leveling: [
@@ -98,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
             weapons: [
                 { icon: 'Aura.png', name: 'Аура', description: 'Основное оружие Чада' },
                 { icon: 'Egida.png', name: 'Эгида', description: 'Чтобы жить' },
-                { icon: 'Bluetooth knife.png', name: 'Беспроводной кинжал', description: 'Брать во второй слот, изи прохождение первой локи' },
+                { icon: 'Bluetooth Knife.png', name: 'Беспроводной кинжал', description: 'Брать во второй слот, изи прохождение первой локи' },
                 { icon: 'Katana.png', name: 'Катана', description: 'Большой дпс со старта' },
             ],
             tomes: [
@@ -108,8 +135,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { icon: 'CursedTome.png', name: 'Проклятый Том', description: '+ Кол-во мобов - больше опыта' },
             ],
             gear: [
-                { icon: 'Itemcactus.png', name: 'Кактус', description: 'Выстреливает шипами при получении урона, урон так же зависит от шипов' },
-                { icon: 'Tevin.png', name: 'Кевин', description: 'Синергия с кактусом, основа билда' },
+                { icon: 'ItemCactus.png', name: 'Кактус', description: 'Выстреливает шипами при получении урона, урон так же зависит от шипов' },
+                { icon: 'Kevin.png', name: 'Кевин', description: 'Синергия с кактусом, основа билда' },
                 { icon: 'ItemSpikyShieldf.png', name: 'Щит с Шипами', description: '+2 шипы за каждый % армора, синергия с томом на армор' },
             ],
             // ------------------------------------
@@ -126,36 +153,6 @@ document.addEventListener('DOMContentLoaded', () => {
             tips: 'Из второстепенных айтемов можно взять маску квина, электро вилку или голд шилд, лишними не будут',
 
         },
-
-        'Noelle-HollyBook': {
-            character: 'Ноэль (Noelle)',
-            weapons: [
-                { icon: 'Frostwalker.png', name: 'Ледяной Странник', description: 'Основное оружие Ноэль' },
-                { icon: 'Firewalker.png', name: 'Огненный странник', description: 'Большой урон по области, брать обязательно' },
-                { icon: 'katana.png', name: 'Катана', description: 'Большой дпс на старте дает выживаемость' },
-                { icon: 'Dexecutioner.png', name: 'Дексекьюционер', description: 'Урон по небольшой области, есть шанс моментально убить врага' },
-            ],
-            tomes: [
-                { icon: 'CursedTome.png', name: 'Проклятый Том', description: '+ Сложность, + кол-во мобов' },
-                { icon: 'XpTome.png', name: 'Том Опыта', description: '+ Увеличение Опыта, брать обязательно' },
-                { icon: 'Bloodtome.png', name: 'Кровавый Том', description: 'Лайфстил для бука' },
-                { icon: 'ChaosTome.png', name: 'Том Хаоса', description: 'Качает случайную характеристику' },
-            ],
-            gear: [
-                { icon: 'Itemholybook.png', name: 'Святая Книга', description: '+ 100 макс. хп, +50 регена, реген наносит урон  ' },
-            ],
-            // ------------------------------------
-            leveling: [
-                'Для старта ищем кредитку и ключи, раздуваем удачу',
-                'До конца второго уровня желательно найти ключевые айтемы билда',
-            ],
-            Up: [
-                'На первых уровнях качаем томы',
-                'Параллельно из шрайнов стараемся забирать любой хил',
-            ],
-            tips: 'Основа билда заключается в том чтобы в лейте быть с раздутым хилом и минимум одной книгой, радиус книги увеличивается за счет пассивки ноэль которая дает +1% размера за каждый уровень, по ходу игры можно найти вилки которые под кевином дают много урона и выживаемости, так же под кевина можно взять голд шилд. На сайте есть гайд <a href="guides/hollyBook-explain.html" class="tip-link">как работает Святая Книга</a>',
-        },
-         
         'Vlad-bloodmarks': {
             character: 'Влад (Vlad)',
             weapons: [
@@ -167,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tomes: [
                 { icon: 'XpTome.png', name: 'Том Опыта', description: '+ Увеличение Опыта, брать обязательно' },
                 { icon: 'CursedTome.png', name: 'Проклятый Том', description: '+ Сложность, + кол-во мобов' },
-                { icon: 'Bloodtome.png', name: 'Кровавый том', description: 'Лайфстил' },
+                { icon: 'BloodTome.png', name: 'Кровавый том', description: 'Лайфстил' },
                 { icon: 'ChaosTome.png', name: 'Том Хаоса', description: 'Качает случайную характеристику' },
             ],
             gear: [
