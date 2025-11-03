@@ -26,30 +26,30 @@
 }
 
 @font-face {
-  font-family: "Quintessential";
-  src: url(./fonts/Quintessential-Regular.woff2) format(woff2);
+  font-family: "YsabeauOffice";
+  src: url(/fonts/YsabeauOffice-Medium.woff2) format(woff2);
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "YsabeauOffice";
-  src: url(./fonts/YsabeauOffice-Medium.woff2) format(woff2);
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "YsabeauOffice";
-  src: url(./fonts/YsabeauOffice-Regular.woff2) format(woff2);
+  src: url(/fonts/YsabeauOffice-Regular.woff2) format(woff2);
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "YsabeauOffice";
-  src: url(./fonts/YsabeauOffice-Bold.woff2) format(woff2);
+  src: url(/fonts/YsabeauOffice-Bold.woff2) format(woff2);
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quintessential";
+  src: url(/fonts/Quintessential-Regular.woff2) format(woff2);
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -277,6 +277,11 @@ html.lightbox-open, body.lightbox-open {
   max-width: var(--container-width);
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .header__container {
+    padding: 2px 15px;
+  }
+}
 .header__container .header__nav {
   display: flex;
   justify-content: space-between;
@@ -327,7 +332,7 @@ html.lightbox-open, body.lightbox-open {
 }
 @media (max-width: 768px) {
   .header__container .header__nav .header__nav-list .header__nav-item .header__nav-link:last-child {
-    margin-left: 20px;
+    margin-left: 30px;
   }
 }
 .header__container .header__nav .header__nav-list .header__nav-item .header__nav-link:hover {
@@ -345,9 +350,14 @@ html.lightbox-open, body.lightbox-open {
   padding: 40px 30px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .section .section__main {
+    padding: 20px 10px;
+  }
+}
 .section .section__main .section__title {
   padding: 20px 0;
-  max-width: 50%;
+  max-width: 100%;
   margin: 0 auto;
   text-transform: uppercase;
   font-family: var(--font-family-base);
@@ -360,11 +370,11 @@ html.lightbox-open, body.lightbox-open {
 }
 @media (max-width: 480px) {
   .section .section__main .section__title {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 .section .section__main-title {
-  height: auto;
+  height: 73vh;
   display: flex;
   padding: 40px 30px;
   align-items: center;
@@ -375,11 +385,11 @@ html.lightbox-open, body.lightbox-open {
 @media (max-width: 480px) {
   .section .section__main-title {
     height: 73vh;
+    padding: 0;
   }
 }
 .section .section__main-title .section__title {
   padding: 20px 0;
-  max-width: 50%;
   margin: 0 auto;
   text-transform: uppercase;
   font-family: var(--font-family-accent);
@@ -467,13 +477,14 @@ html.lightbox-open, body.lightbox-open {
 
 .guides__card-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .guides__card-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
   }
 }
 .guides__card-list .guides__card {
@@ -486,6 +497,11 @@ html.lightbox-open, body.lightbox-open {
   justify-content: center;
   padding: 10px;
   color: var(--color-white);
+}
+@media (max-width: 480px) {
+  .guides__card-list .guides__card {
+    min-height: 62px;
+  }
 }
 .guides__card-list .guides__card:hover {
   border-color: var(--color-card-border);
@@ -661,9 +677,10 @@ html.lightbox-open, body.lightbox-open {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .builds__inner {
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
   }
 }
 
@@ -680,8 +697,8 @@ html.lightbox-open, body.lightbox-open {
 }
 @media (max-width: 480px) {
   .builds__card {
-    min-height: 70px;
-    padding: 7px;
+    min-height: 62px;
+    padding: 5px;
   }
 }
 .builds__card:hover {
@@ -880,8 +897,8 @@ html.lightbox-open, body.lightbox-open {
 }
 @media (max-width: 480px) {
   .build-details__item-detail .icon {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
   }
 }
 .build-details__item-detail .name {
@@ -893,6 +910,11 @@ html.lightbox-open, body.lightbox-open {
   font-size: 14px;
   color: var(--quote-color);
   margin-top: 5px;
+}
+@media (max-width: 480px) {
+  .build-details__item-detail .description {
+    display: none;
+  }
 }
 .build-details__list {
   list-style: none;
@@ -919,6 +941,7 @@ html.lightbox-open, body.lightbox-open {
   .items-category {
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     font-size: 18px;
+    gap: 10px;
   }
 }
 

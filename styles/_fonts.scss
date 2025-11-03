@@ -1,13 +1,6 @@
 @font-face {
-    font-family: "Quintessential";
-    src: url(./fonts/Quintessential-Regular.woff2) format(woff2);
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
     font-family: "YsabeauOffice";
-    src: url(./fonts/YsabeauOffice-Medium.woff2) format(woff2);
+    src: url(/fonts/YsabeauOffice-Medium.woff2) format(woff2);
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -15,7 +8,7 @@
 
 @font-face {
     font-family: "YsabeauOffice";
-    src: url(./fonts/YsabeauOffice-Regular.woff2) format(woff2);
+    src: url(/fonts/YsabeauOffice-Regular.woff2) format(woff2);
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -23,8 +16,15 @@
 
 @font-face {
     font-family: "YsabeauOffice";
-    src: url(./fonts/YsabeauOffice-Bold.woff2) format(woff2);
+    src: url(/fonts/YsabeauOffice-Bold.woff2) format(woff2);
     font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Quintessential";
+    src: url(/fonts/Quintessential-Regular.woff2) format(woff2);
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }

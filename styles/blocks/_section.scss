@@ -1,14 +1,19 @@
 .section {
     background-color: var(--color-background);
     
+    
 
     .section__main {
         padding: 40px 30px;
         text-align: center;
 
+        @media (max-width: 768px) {
+            padding: 20px 10px;
+        }
+
         .section__title {
             padding: 20px 0;
-            max-width: 50%;
+            max-width: 100%;
             margin: 0 auto;
             text-transform: uppercase;
             font-family: var(--font-family-base);
@@ -18,13 +23,13 @@
                 font-size: 36px;
             }
             @media (max-width: 480px) {
-                font-size: 28px;
+                font-size: 26px;
             }
         }
     }
 
     .section__main-title {
-        height: auto;
+        height: 73vh;
         display: flex;
         padding: 40px 30px;
         align-items: center;
@@ -34,11 +39,11 @@
 
         @media (max-width: 480px) {
             height: 73vh;
+            padding: 0;
         }
 
         .section__title {
             padding: 20px 0;
-            max-width: 50%;
             margin: 0 auto;
             text-transform: uppercase;
             font-family: var(--font-family-accent);
