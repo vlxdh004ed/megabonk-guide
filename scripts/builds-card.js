@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             gear: [
                 { icon: 'ItemIceCrystal.png', name: 'Ледяной Кристал', description: 'Хорошо бустит урон на старте, и в миде' },
-                { icon: 'ItemiIceCube.png', name: 'Ледяной Куб', description: 'Наверное мейн айтем для билда' },
+                { icon: 'ItemIceCube.png', name: 'Ледяной Куб', description: 'Наверное мейн айтем для билда' },
             ],
             // ------------------------------------
             leveling: [
